@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MS TECH SOLUTIONS</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,sans-serif}
+body{background:#070e17;color:#fff;line-height:1.7}
+header{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:15px 5%;background:rgba(0,0,0,.8);backdrop-filter:blur(10px);z-index:1000}
+.logo{display:flex;align-items:center;gap:10px}
+.logo img{width:55px;height:55px;border-radius:50%;border:2px solid #00d4ff}
+nav a{color:#fff;text-decoration:none;margin-left:18px}
+.hero{height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;background:linear-gradient(rgba(5,10,20,.85),rgba(5,10,20,.9)),url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80');background-size:cover}
+.hero h1{font-size:4rem;background:linear-gradient(90deg,#fff,#00d4ff,#9d4edd);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:800px;margin:20px auto;color:#d1d5db}
+.btn{display:inline-block;padding:14px 30px;border-radius:40px;background:linear-gradient(90deg,#00d4ff,#9d4edd);color:#fff;text-decoration:none}
+section{padding:90px 8%}
+.title{text-align:center;font-size:2.4rem;margin-bottom:35px;color:#00d4ff}
+.box,.card,.form-box{background:rgba(255,255,255,.05);padding:25px;border-radius:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card h3{margin-bottom:10px}
+.form-box{max-width:800px;margin:auto}
+input,select,textarea{width:100%;padding:14px;margin:8px 0 18px;background:#101c2d;color:#fff;border:none;border-radius:10px}
+button{width:100%;padding:15px;border:none;border-radius:10px;background:linear-gradient(90deg,#00d4ff,#9d4edd);color:#fff;font-weight:bold}
+footer{padding:30px;text-align:center;background:#04080e;color:#aaa}
+.whatsapp{position:fixed;right:20px;bottom:20px;width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:28px}
+@media(max-width:768px){nav{display:none}.hero h1{font-size:2.4rem}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">
+<img src="mslogo.png" alt="logo">
+<h2>MS TECH SOLUTIONS</h2>
+</div>
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#vision">Vision</a>
+<a href="#contact">Enquiry</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>MS TECH SOLUTIONS</h1>
+<p>Professional Website Development, Mobile Apps, AI Solutions, Cloud Services and Business Automation.</p>
+<a class="btn" href="#contact">Get Free Consultation</a>
+</div>
+</section>
+
+<section id="about">
+<h2 class="title">About Us</h2>
+<div class="box">
+MS TECH SOLUTIONS delivers innovative software solutions, mobile applications, AI-powered systems, cloud deployment and digital transformation services for startups, businesses and enterprises.
+</div>
+</section>
+
+<section id="services">
+<h2 class="title">Our Services</h2>
+<div class="grid">
+<div class="card"><h3>🌐 Website Development</h3><p>Modern responsive business websites.</p></div>
+<div class="card"><h3>📱 Mobile Apps</h3><p>Android and iOS application development.</p></div>
+<div class="card"><h3>🤖 AI Solutions</h3><p>Automation and intelligent business tools.</p></div>
+<div class="card"><h3>☁ Cloud Services</h3><p>Hosting, deployment and infrastructure.</p></div>
+<div class="card"><h3>📈 Digital Marketing</h3><p>SEO and online growth solutions.</p></div>
+<div class="card"><h3>💼 Custom Software</h3><p>ERP, CRM and enterprise software.</p></div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Achievements</h2>
+<div class="grid">
+<div class="card"><h3>100+</h3><p>Projects Completed</p></div>
+<div class="card"><h3>50+</h3><p>Happy Clients</p></div>
+<div class="card"><h3>24/7</h3><p>Support</p></div>
+<div class="card"><h3>99%</h3><p>Client Satisfaction</p></div>
+</div>
+</section>
+
+<section id="vision">
+<h2 class="title">Vision & Mission</h2>
+<div class="box">
+<h3>Vision</h3>
+<p>To become a trusted technology partner delivering innovative digital solutions worldwide.</p>
+<br>
+<h3>Mission</h3>
+<p>To help businesses grow through reliable software, AI, cloud and automation technologies.</p>
+</div>
+</section>
+
+<section>
+<h2 class="title">Why Choose Us</h2>
+<div class="grid">
+<div class="card"><h3>⚡ Fast Delivery</h3></div>
+<div class="card"><h3>🔒 Secure Solutions</h3></div>
+<div class="card"><h3>🤝 Dedicated Support</h3></div>
+<div class="card"><h3>💡 Innovative Technology</h3></div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="title"> Enquiry Form</h2>
+<div class="form-box">
+<form>
+<label>Full Name</label>
+<input type="text" placeholder="Enter your name">
+<label>Mobile Number</label>
+<input type="tel" placeholder="+91 9876543210">
+<label>Email</label>
+<input type="email" placeholder="yourmail@example.com">
+<label>Company Name</label>
+<input type="text" placeholder="Company Name">
+<label>Service</label>
+<select><option>Website Development</option><option>Mobile App</option><option>AI Solution</option><option>Cloud Service</option></select>
+<label>Project Details</label>
+<textarea rows="6" placeholder="Describe your requirements"></textarea>
+<button type="submit">Submit Enquiry</button>
+</form>
+</div>
+</section>
+
+<section>
+<h2 class="title">Privacy Policy</h2>
+<div class="box">
+We respect your privacy. Information submitted through this website is used only to respond to enquiries and provide services. We do not sell customer information to third parties.
+</div>
+</section>
+
+<section>
+<h2 class="title">Terms & Conditions</h2>
+<div class="box">
+Services are subject to project scope, timelines and agreed payment terms. Website content may be updated without prior notice.
+</div>
+</section>
+<section id="location">
+<h2 class="title">Our Location - Pollachi</h2>
+
+<div class="box">
+
+<p style="text-align:center;margin-bottom:20px;">
+MS TECH SOLUTIONS - Pollachi, Tamil Nadu, India
+</p>
+
+<iframe
+src="https://maps.google.com/maps?q=Pollachi,Tamil%20Nadu&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="450"
+style="border:0;border-radius:15px;"
+allowfullscreen
+loading="lazy">
+</iframe>
+
+<br><br>
+
+<div style="text-align:center;">
+<a class="btn"
+href="https://maps.google.com/?q=Pollachi,Tamil Nadu"
+target="_blank">
+📍 Open in Google Maps
+</a>
+</div>
+
+</div>
+</section>
+
+<footer>
+<h3>MS TECH SOLUTIONS</h3>
+<p>Innovating Business Through Technology</p>
+<p>© 2026 MS TECH SOLUTIONS. All Rights Reserved.</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919876543210">💬</a>
+
+</body>
+</html>

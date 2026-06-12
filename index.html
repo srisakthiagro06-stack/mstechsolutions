@@ -29,6 +29,115 @@ footer{padding:30px;text-align:center;background:#04080e;color:#aaa}
 </style>
 </head>
 <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MS TECH SOLUTIONS</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f1a;
+  color: white;
+}
+
+/* HEADER */
+header {
+  padding: 20px;
+  text-align: center;
+  background: #111827;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+/* 3 DOT BUTTON */
+.menu-container {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 9999;
+}
+
+.dots {
+  font-size: 28px;
+  cursor: pointer;
+  padding: 8px 12px;
+  background: #111;
+  color: white;
+  border-radius: 8px;
+  user-select: none;
+}
+
+/* OVERLAY */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 9998;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* SLIDE MENU */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 250px;
+  height: 100%;
+  background: #1c1c1c;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+  transition: 0.3s ease;
+  z-index: 9999;
+  padding-top: 60px;
+}
+
+.side-menu.open {
+  right: 0;
+}
+
+.side-menu a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+}
+
+.side-menu a:hover {
+  background: #333;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+</body>
+</html>
 
 <header>
 <div class="logo">
@@ -41,6 +150,51 @@ footer{padding:30px;text-align:center;background:#04080e;color:#aaa}
 <a href="#vision">Vision</a>
 <a href="#contact">Enquiry</a>
 </nav>
+</header>
+    
+</body>
+
+
+<!-- MENU BUTTON -->
+<div class="menu-container">
+  <div class="dots" onclick="openMenu()">⋮</div>
+</div>
+
+<!-- OVERLAY -->
+<div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+<!-- SIDE MENU -->
+<div id="sideMenu" class="side-menu">
+  <div class="close-btn" onclick="closeMenu()">✕</div>
+  <a href="#home" onclick="closeMenu()">Home</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<script>
+function openMenu() {
+  document.getElementById("sideMenu").classList.add("open");
+  document.getElementById("overlay").classList.add("show");
+}
+
+function closeMenu() {
+  document.getElementById("sideMenu").classList.remove("open");
+  document.getElementById("overlay").classList.remove("show");
+}
+</script>
+
+<script>
+function openMenu() {
+  document.getElementById("sideMenu").classList.add("open");
+  document.getElementById("overlay").classList.add("show");
+}
+
+function closeMenu() {
+  document.getElementById("sideMenu").classList.remove("open");
+  document.getElementById("overlay").classList.remove("show");
+}
+</script>
 </header>
 
 <section class="hero">
